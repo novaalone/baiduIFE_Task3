@@ -1,0 +1,183 @@
+body{
+    background-color: #dedede;
+}
+/*头部导航区*/
+.header{
+    height:80px;
+    line-height: 80px;
+    background-color: black;
+}
+.header img{
+    float:left;
+    height:70px;
+    margin-left: 20px;
+}
+.nav_wrap{
+    float:right;
+    margin-right: 20px;
+}
+.nav_wrap li{
+    float:left;
+}
+.nav{
+    color:white;
+    font-size: 16px;
+    padding:0 10px;
+    font-family: "Microsoft YaHei UI";
+}
+.nav:hover{
+    color:#e10601;
+}
+.active{
+    color:#9fa4aa;
+}
+
+/*文章*/
+.article_wrapper{
+    margin:20px;
+    background-color: white;
+    box-shadow: 2px 2px 3px #9f9f9f;
+}
+
+.article{
+    padding:20px;
+}
+h1{
+    padding-bottom:10px;
+}
+h2{
+    color:#6e7176;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.author{
+    font-size: 12px;
+    color:#707176;
+    padding-bottom: 10px;
+}
+.content{
+    font-size: 14px;
+    text-indent: 28px;
+    font-family: "Microsoft YaHei UI";
+    line-height: 30px;
+}
+.list{
+    font-family: "Microsoft YaHei UI";
+    font-size: 14px;
+    padding-left: 28px;
+    line-height: 30px;
+}
+.img_gallery{
+    border: 1px solid #ccc;
+    width:300px;
+    height:300px;
+    text-align: center;
+    margin-bottom:10px;
+}
+.img_gallery p{
+    font-size: 16px;
+
+    padding:10px;
+}
+
+.rank{
+    padding-left: 28px;
+    padding-bottom:20px;
+    font-size: 16px;
+    font-family: "Microsoft YaHei UI";
+    line-height: 30px;
+}
+.rank li{
+    list-style:decimal;
+}
+
+.table{
+    width: 100%;
+    border-collapse: collapse;
+    line-height: 30px;
+    font-family: "Microsoft YaHei UI";
+}
+caption{
+
+    font-size: 16px;
+    text-align: start;
+}
+.table th{
+    background-color: black;
+    color: white;
+    text-align: start;
+}
+.table td,.table th{
+    border:1px solid #ccc;
+    padding-left:5px;
+}
+.total{
+    background-color: #ccc;
+
+}
+
+/*侧栏部分*/
+.aside{
+padding:20px;
+
+}
+.aside_title{
+    border-left: 5px solid #ccc;
+    padding-left: 10px;
+    height:40px;
+    line-height: 40px;
+}
+
+
+.form{
+    font-family: "Microsoft YaHei UI";
+    font-size: 16px;
+    line-height: 40px;
+}
+
+.form input{
+    font-size: 16px;
+}
+.form span{
+    padding-left: 170px;
+    font-size: 12px;
+    color: #ccc;
+}
+.info{
+    padding-left: 300px;
+    padding-bottom: 20px;
+}
+
+.hint{
+    display: inline-block;
+    width:150px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+
+.description{
+    width:600px;
+    height: 100px;
+    vertical-align: top;
+    font-size: 18px;
+}
+.submit{
+    display: inline-block;
+    background-color: #3355d0;
+    color:white;
+    width: 100%;
+    height:40px;
+    border-radius: 10px;
+
+}
+
+/*footer*/
+.footer{
+    background-color: black;
+    color: white;
+    height:80px;
+    line-height: 80px;
+    text-align: center;
+    font-family: "Microsoft YaHei UI";
+}
