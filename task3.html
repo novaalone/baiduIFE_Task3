@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>任务三，三栏式布局</title>
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/task3.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="wrapper clearfix">
+
+
+<div class='left'>
+    <img src="img/3.jpg" alt="">
+    <span>宋仲基</span>
+</div>
+
+<div class="right">
+    <figure>
+        <img src="img/3.jpg" alt=""/>
+        <img src="img/3.jpg" alt=""/>
+        <img src="img/3.jpg" alt=""/>
+        <img src="img/3.jpg" alt=""/>
+    </figure>
+</div>
+    <div class="main">
+        <h1>三栏式布局的三种方法</h1>
+        <h2>第一种 绝对定位法</h2>
+        <p>左右两栏采用绝对定位，分别固定于页面的左右两侧，
+        中间栏用左右margin值撑开。左中右三个div的顺序可以
+        任意调整。</p>
+        <ul>
+            <li>优点：简单，容易理解</li>
+            <li>缺点：如果中间栏有最小宽度限制，或者
+            含有宽度的内部元素，当浏览器宽度小到一定程度，
+            会发生重叠的情况。</li>
+        </ul>
+        <h2>第二种 margin负值法</h2>
+        <p>这种方法在实际网站中应用的最多，主体部分使用双层标签，
+        外层div宽度100%显示，并且浮动，内层div为真正的主体内容，
+        左右设置margin值。左右两栏都采用margin负值定位，并设置浮动
+        左栏margin-left为-100%，右栏margin-left为负，大小为本身宽度
+        div的顺序为先中间栏，后左右顺序无所谓</p>
+        <ul>
+            <li>优点：三栏相互关联，可谓真正意义上的自适应，布局不易受内部影响</li>
+            <li>缺点：比较难理解，代码相对复杂</li>
+        </ul>
+        <h2>第三种 自身浮动法</h2>
+        <p>左栏左浮动，右栏右浮动，中间栏放后面，就实现了自适应</p>
+        <ul>
+            <li>优点：代码简洁高效</li>
+            <li>缺点：中间栏存在克星，clear:both属性</li>
+        </ul>
+    </div>
+
+</div>
+
+
+</body>
+</html>
