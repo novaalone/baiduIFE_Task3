@@ -1,0 +1,37 @@
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.one,.two,.three,.four{
+    width:150px;
+    margin: 20px;
+
+}
+.one,.two,.three{
+    border:1px solid #f00;
+}
+.one{
+    height:120px;
+}
+.two{
+    height:100px;
+}
+.three{
+    height: 40px;
+}
+.four{
+    height:200px;
+    border:1px solid #00f;
+}
+@media screen and (max-width: 640px){
+    .wrapper{
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    .four{
+        order:-1;
+    }
+
+}
