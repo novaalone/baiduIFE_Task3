@@ -1,0 +1,7 @@
+.queue li{
+    color:#fff;
+    background-color: red;
+    padding:5px;
+    float: left;
+    margin: 5px;
+}
