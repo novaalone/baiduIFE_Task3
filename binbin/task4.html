@@ -2,24 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>任务四：基础JavaScript练习（一）</title>
+    <title>任务五：基础JavaScript练习（二）</title>
     <link href="css/reset.css" rel="stylesheet" type="text/css">
     <link href="css/task4.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-<input type="text" id="input">
+<div class="wrapper">
+<h1>排序算法演示</h1>
+<div class="input_box">
+    <label for="input">请输入需要排列的数</label>
+    <input type="text" id="input">
 <span id="buttons">
     <button id="leftIn">左侧入</button>
     <button id="rightIn">右侧入</button>
     <button id="leftOut">左侧出</button>
     <button id="rightOut">右侧出</button>
 </span>
+</div>
+<div class="queue_wrapper">
+    <ul id="queue" class="queue clearfix">
+        <!--<li>10</li>-->
+        <!--<li>3</li>-->
+        <!--<li>7</li>-->
+    </ul>
+</div>
+    <div class="sort_wrapper" id="sort_wrapper">
+        <button id="bubble">冒泡排序</button>
+        <button id="quick">快速排序</button>
+        <button id="insert">插入排序</button>
+        <button id="select">选择排序</button>
+    </div>
+<div class="hint" id="hint">
 
-<ul id="queue" class="queue clearfix">
-    <!--<li>10</li>-->
-    <!--<li>3</li>-->
-    <!--<li>7</li>-->
-</ul>
+</div>
+
+
+</div>
 <script src="js/task4.js"></script>
 </body>
 </html>

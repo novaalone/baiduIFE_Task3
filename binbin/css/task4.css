@@ -1,7 +1,26 @@
 .queue li{
-    color:#fff;
+    color: red;
+    font-size: 0;
     background-color: red;
-    padding:5px;
+    width: 20px;
     float: left;
     margin: 5px;
+}
+
+.queue{
+    display: flex;
+    align-items: flex-end;
+}
+.queue_wrapper{
+    display: flex;
+    justify-content: center;
+}
+.wrapper{
+    width:100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.hint{
+    font-size: 24px;
+    color:red;
 }
