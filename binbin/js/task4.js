@@ -144,7 +144,8 @@ sort.addEventListener("click",function(ev){
                 bubble_sort();
                 break;
             case "quick":
-                wait();
+                arrays=getArr();
+                quiSort();
                 break;
             case "insert":
                 arrays=getArr();
@@ -281,4 +282,48 @@ function select_process(){
         hint.innerHTML="排序完成,一共"+(selectTimes)+"趟";
         return;
     }
+}
+
+
+//快速排序
+
+function quiSort(){
+    quick_process(0,arrays.length-1);
+}
+function quick_process(left,right)
+{
+
+    var keyPosition = partition(left,right);
+    quick_process(left,keyPosition-1);
+    quick_process(keyPosition+1,right);
+
+}
+function partition(left,right){
+
+    var hint = document.getElementById("hint");
+    var standard = arrays[left].innerHTML;
+    while(left<right)
+    {
+        while(left<right&&arrays[right].innerHTML>standard)
+        {
+            right--;
+        }
+        if(left<right)
+        {
+            arrays[left].innerHTML=arrays[right].innerHTML;
+            left++;
+        }
+        while(left<right&&arrays[left].innerHTML<standard)
+        {
+            left++;
+        }
+        if(left<right)
+        {
+            arrays[right].innerHTML=arrays[left].innerHTML;
+        }
+
+    }
+    arrays[left].innerHTML=standard;
+    resetHeight();
+    return left;
 }
