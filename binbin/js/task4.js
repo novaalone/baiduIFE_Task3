@@ -147,7 +147,8 @@ sort.addEventListener("click",function(ev){
                 wait();
                 break;
             case "insert":
-                wait();
+                arrays=getArr();
+                insertSort();
                 break
             case "select":
                 wait();
@@ -214,4 +215,35 @@ function bubble_process()
         return;
     }
 
+}
+
+//插入排序
+var insertTimes;
+function insertSort()
+{
+    insertTimes=1;
+    insertProcess();
+}
+function insertProcess()
+{
+    var hint = document.getElementById("hint");
+    if(insertTimes<arrays.length)
+    {
+        var temp=arrays[insertTimes].innerHTML;
+        var j=insertTimes-1;
+        for(;j>=0&&arrays[j].innerHTML>temp;j--)
+        {
+                arrays[j+1].innerHTML=arrays[j].innerHTML;
+        }
+        arrays[j+1].innerHTML=temp;
+
+        hint.innerHTML="第"+(insertTimes)+"趟";
+        resetHeight();
+        insertTimes++;
+        setTimeout(insertProcess,2000);
+    }else
+    {
+        hint.innerHTML="排序完成,一共"+(insertTimes-1)+"趟";
+        return;
+    }
 }

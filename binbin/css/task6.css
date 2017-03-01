@@ -1,0 +1,22 @@
+.queue li{
+    color: white;
+    font-size: 20px;
+    background-color: red;
+    float: left;
+    margin: 5px;
+    padding: 10px;
+}
+
+.queue{
+    display: flex;
+    align-items: flex-end;
+}
+.queue_wrapper{
+    display: flex;
+    justify-content: center;
+}
+.wrapper{
+    width:100%;
+    margin: 0 auto;
+    text-align: center;
+}
