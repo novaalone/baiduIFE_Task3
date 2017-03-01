@@ -151,7 +151,8 @@ sort.addEventListener("click",function(ev){
                 insertSort();
                 break
             case "select":
-                wait();
+                arrays=getArr();
+                selectSort();
                 break;
         }
     }
@@ -244,6 +245,40 @@ function insertProcess()
     }else
     {
         hint.innerHTML="排序完成,一共"+(insertTimes-1)+"趟";
+        return;
+    }
+}
+
+//选择排序
+var selectTimes;
+function selectSort()
+{
+    selectTimes=0;
+    select_process();
+}
+function select_process(){
+    var hint = document.getElementById("hint");
+    if(selectTimes<arrays.length)
+    {
+        var position = selectTimes;
+        for(var j=selectTimes+1;j<arrays.length;j++)
+        {
+            if(arrays[j].innerHTML<arrays[position].innerHTML)
+            {
+                position=j;
+            }
+        }
+        var temp = arrays[selectTimes].innerHTML;
+        arrays[selectTimes].innerHTML=arrays[position].innerHTML;
+        arrays[position].innerHTML=temp;
+
+        hint.innerHTML="第"+(selectTimes+1)+"趟";
+        resetHeight();
+        selectTimes++;
+        setTimeout(select_process,2000);
+    }else
+    {
+        hint.innerHTML="排序完成,一共"+(selectTimes)+"趟";
         return;
     }
 }
