@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>任务七：JavaScript和树（一）</title>
+    <link href="css/reset.css" rel="stylesheet" type="text/css"/>
+    <link href="css/task8.css" rel="stylesheet" type="text/css"/>
+
+</head>
+<body>
+
+<div class="wrapper" id="wrapper">
+    <div class="node" id="root">
+        super
+        <div class="node">
+            foods
+            <div class="node">
+                fruits
+                <div class="node">
+apple
+                </div>
+                <div class="node">banana</div>
+                <div class="node">orange</div>
+                <div class="node">lemon</div>
+            </div>
+            <div class="node">
+                vegetables
+                <div class="node">
+                    lettuce
+                </div>
+                <div class="node">potato</div>
+            </div>
+            <div class="node">meats</div>
+        </div>
+        <div class="node">
+            clothes
+            <div class="node">male
+                <div class="node">
+                    jacket
+                </div>
+                <div class="node">
+                    tie
+                </div>
+            </div>
+            <div class="node">
+                female
+                <div class="node">
+                    dress
+                </div>
+                <div class="node">
+                    T-shirt
+                </div>
+            </div>
+        </div>
+        <div class="node">furniture</div>
+    </div>
+
+
+</div>
+
+<div class="buttons" id="buttons">
+    <button id="dfs">深度优先</button>
+    <button id="bfs">广度优先</button>
+</div>
+
+<div class="search" id="search">
+    <input type="text" id="keyword">
+    <button class="search_btn" id="search_dfs">深度优先查询</button>
+    <button class="search_btn" id="search_bfs">广度优先查询</button>
+
+</div>
+<script src="js/task8.js"></script>
+</body>
+</html>

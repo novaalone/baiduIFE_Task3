@@ -1,0 +1,26 @@
+.wrapper{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.node{
+    border:1px solid #000;
+    margin:5px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    color:black;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+.search{
+    display: flex;
+    justify-content: center;
+}
+.buttons button{
+    margin: 5px;
+}
