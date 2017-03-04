@@ -1,0 +1,27 @@
+.verify_btn{
+    width: 100px;
+    height:50px;
+    background-color: dodgerblue;
+    color:white;
+    border:none;
+    border-radius: 10px;
+    font-size: 24px;
+    font-family: 微软雅黑;
+}
+.wrapper{
+    font-size: 24px;
+    width:1000px;
+    height:500px;
+    margin: 300px auto;
+}
+.text{
+    height:50px;
+    width:500px;
+    font-size: 24px;
+    border:1px solid #ccc;
+}
+.hint{
+    font-size: 20px;
+    color: #ccc;
+    padding-left: 50px;
+}
