@@ -27,7 +27,7 @@ function focus(){
             break;
         case "password":
             rule = document.getElementById("password_hint");
-            rule.innerHTML="必填，密码长度不少于6位";
+            rule.innerHTML="必填，密码长度不少于8位";
             break;
         case "confirm":
             rule = document.getElementById("confirm_hint");
