@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a872a2ba-f929-49b9-af84-b1f0abf9a075" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yaoyao/task2.html" afterPath="$PROJECT_DIR$/yaoyao/task2.html" />
     </list>
     <ignored path="baiduIFE.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,7 +27,7 @@
         <entry file="file://$PROJECT_DIR$/yaoyao/task2.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.6439024">
-              <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+              <caret line="11" column="70" selection-start-line="11" selection-start-column="70" selection-end-line="11" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -713,7 +712,7 @@
     <entry file="file://$PROJECT_DIR$/yaoyao/task2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6439024">
-          <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+          <caret line="11" column="70" selection-start-line="11" selection-start-column="70" selection-end-line="11" selection-end-column="70" />
           <folding />
         </state>
       </provider>
