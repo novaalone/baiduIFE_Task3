@@ -1,0 +1,99 @@
+/*栅格式布局*/
+.container{
+    width: 100%;
+}
+.row:before,.row:after{
+    content:"";
+    display: table;
+    clear: both;
+}
+[class*='col-']{
+    float: left;
+    margin: 10px;
+}
+.col-1{
+    width: calc(8.33% - 20px);
+}
+.col-2{
+    width: calc(16.66% - 20px);
+}
+.col-3{
+    width:calc(25% - 20px);
+}
+.col-4{
+    width:calc(33.33% - 20px);
+}
+.col-5{
+    width: calc(41.66% - 20px);
+}
+.col-6{
+    width: calc(50% - 20px);
+}
+.col-7{
+    width: calc(58.33% - 20px);
+}
+.col-8{
+    width: calc(66.66% - 20px);
+}
+.col-9{
+    width: calc(75% - 20px);
+}
+.col-10{
+    width: calc(83.33% - 20px);
+}
+.col-11{
+    width: calc(91.66% - 20px);
+}
+.col-12{
+    width: calc(100% - 20px);
+}
+
+
+
+
+.verify_btn{
+    width: 100px;
+    height:50px;
+    background-color: dodgerblue;
+    color:white;
+    border:none;
+    border-radius: 10px;
+    font-size: 24px;
+    font-family: 微软雅黑;
+    float: right;
+    margin-right: 140px;
+}
+.wrapper{
+    font-size: 24px;
+    width:1000px;
+    margin: 10px auto;
+    background-color: #eeedd6;
+}
+.text{
+    height:50px;
+    width:500px;
+    font-size: 24px;
+    border:1px solid #ccc;
+}
+.hint{
+    font-size: 20px;
+    color: #ccc;
+    display: none;
+}
+
+
+
+.wrapper h1{
+    text-align: center;
+}
+
+.wrapper input{
+    border: 1px solid #ccc;
+}
+
+label{
+    width: 100px;
+    text-align: right;
+    display: inline-block;
+    float: right;
+}

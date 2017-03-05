@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>任务二：表单（二）多个表单项的动态校验</title>
+    <link rel="stylesheet" href="css/reset.css" type="text/css"/>
+    <link rel="stylesheet" href="css/task2.css" type="text/css"/>
+</head>
+<body>
+<div class="wrapper">
+    <div class="container">
+        <form class="verify clearfix" id="verify" action="" onsubmit="check()">
+            <h1>多个表单项的动态校验</h1>
+            <div class="row">
+                <div class="col-4"><label for="text">名称</label></div>
+                <div class="col-8"><input type="text" id="text" class="text"></div>
+            </div>
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-8">
+                    <span class="hint" id="text_hint">aaa</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4"><label for="password">密码</label></div>
+                <div class="col-8"><input type="password" id="password" class="text"></div>
+            </div>
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-8">
+                    <span class="hint" id="password_hint">aaa</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4"><label for="confirm">确认密码</label></div>
+                <div class="col-8"><input type="password" id="confirm" class="text"></div>
+            </div>
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-8">
+                    <span class="hint" id="confirm_hint">aaa</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4"><label for="email">邮箱</label></div>
+                <div class="col-8"><input type="email" id="email" class="text"></div>
+            </div>
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-8">
+                    <span class="hint" id="email_hint">aaa</span>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-4"><label for="tel">手机</label></div>
+                <div class="col-8"><input type="tel" id="tel" class="text"></div>
+            </div>
+            <div class="row hint_wrapper">
+                <div class="col-4"></div>
+                <div class="col-8">
+                    <span class="hint" id="tel_hint">aaa</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <input type="submit" id="submit" class="verify_btn" value="提交">
+                </div>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+<script src="js/task2.js"></script>
+</body>
+</html>
